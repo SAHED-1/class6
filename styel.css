@@ -1,0 +1,57 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+ul{list-style: none;}
+a{text-decoration: none;}
+/* Nave bar start ;;;;;;;;;;; */
+nav{background-color: black;
+width: 800px;
+margin: auto;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav ul li{display: inline-block;}
+
+nav ul{text-align: center;}
+
+nav ul li a{color: blanchedalmond;
+display: inline-block;
+padding: 30px;
+transition: 0.5s;
+position: relative;
+z-index: 1;
+}
+
+nav ul li a::before{
+    content: '';
+    width:0%;
+    height: 100%;
+    background-color: rgb(236, 37, 37);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+    
+}
+nav ul li a::after{
+
+
+   content:'' ;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(250, 29, 0);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+
+nav ul li:hover a::after{width: 50%;}
+nav ul li:hover a::before{width: 50%;}
+
+
+
+.sahed{background-color: darkgray;
+color: rgb(0, 4, 255);}
